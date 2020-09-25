@@ -3,30 +3,93 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .color-primary {
-  background-color: darkcyan;
+  background-color: cornflowerblue;
 }
-.think-border-1{
-  border: solid 20px blanchedalmond;
+
+.thick-border-1 {
+  border: solid 10px black;
+
+  /* Turn a square into a circle*/
+  /* border-radius: 20%; */
 }
-.think-border-2 {
-    border-width: 20px;
-    border-style: solid;
-    border-color: blueviolet;
+
+.thick-border-2 {
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
 }
 
 .outer-square {
   width: 360px;
   height: 360px;
-  background-color: darkkhaki;
+  background-color: cadetblue;
 }
 
 .inner-square {
   width: 200px;
   height: 200px;
-  background-color: coral;
+  background-color: yellow;
 }
+
 .inner-inner-square {
-  width: 108;
-  height: 108;
+  width: 120px;
+  height: 120px;
+}
+
+.greta-background {
+  background-image: url("/image/giphy.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+/* 
+Version 1 for centering: using FlexBox 
+the centering is applied to the direct child
+*/
+.center-v1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+Version 2 for centering: only horizontally 
+the centering is applied to the element that has this class
+*/
+.center-v2 {
+  margin: auto;
+}
+
+.main-container {
+  width: 780px;
+  height: 300px;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.meme-container {
+  width: 250px;
+  height: 250px;
+}
+
+#meme-square-1 {
+
+}
+#meme-square-2{
+    background-image: url("/image/greta.gif");
+    background-size: cover;
+    background-position: center;
+}
+#meme-square-3 {
+
+}
+
+.border-rounded-1 {
+  border: solid 10px black;
+  border-radius: 10%;
 }
